@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW Week2</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-    <script
-      src="https://kit.fontawesome.com/e2ad9e78c2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card" style="width: 25rem;">
-          
-        <form  action="text" id = "search-form">
-          <input class="search" 
-          type="text" 
-          placeholder="search weather" 
-          autocomplete="off"  
-          id="search-text-input"/>
-          <input class= "button" type="submit" value="search">
-        </form>
-        <header>
-          <div class="card-body">
-          <h1 id="card-title">Amsterdam</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HW Week2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://kit.fontawesome.com/e2ad9e78c2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" style="width: 25rem;">
+
+      <form action="text" id="search-form">
+        <input class="search" type="text" placeholder="search weather" autocomplete="off" id="search-text-input" />
+        <input class="button" type="submit" value="search">
+
+      </form>
+      <button class="locationButton" id=current-location> Current Location</button>
+      <header>
+        <div class="card-body">
+          <h1 class="card-title">Amsterdam</h1>
           <p class="card-subtitle">
             Now
             <br />
-            <span id = date>
-            Fri, 19.06.2020
+            <span id=date>
+              Fri, 19.06.2020
             </span>
             <br />
             <strong>
-            <span id = time>             19:06 (CEST)
-            </span>
+              <span id=time> 19:06 (CEST)
+              </span>
             </strong>
-              <br />
-            Partly cloudy
+            <br />
+            <span id=description> Partly cloudy </span>
           </p>
-        </header>
-    
-        <div class="row">
-          <div class="col-12">
-            <div class="card-body">
+      </header>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card-body">
             <h2>
-              
-              <strong class="temperatureNow"> 
+              <strong class="temperatureNow">
                 <span id="current-temperature">19</span>
+
                 <span class="temp">
-                &#8451</span> 
+                  &#8451</span>
                 &nbsp
-                <img  src="images/suncloud.png" alt="">
+                <img id=icon src="images/suncloud.png" alt="">
               </strong>
-              
             </h2>
           </div>
         </div>
-    
-        
 
-          <div class="col-12">
-            <div class="card-body">
+
+
+        <div class="col-12">
+          <div class="card-body">
             <div class="daytime">
               <div class="row">
                 <div class="col-2">20</div>
@@ -79,54 +72,56 @@
                 <div class="col-2">01</div>
               </div>
             </div>
-              <div class="daytemperature">
-                <div class="row">
-                  <div class="col-2">18˚</div>
-                  <div class="col-2">16˚</div>
-                  <div class="col-2">16˚</div>
-                  <div class="col-2">15˚</div>
-                  <div class="col-2">14˚</div>
-                  <div class="col-2">14˚</div>
+            <div class="daytemperature">
+              <div class="row">
+                <div class="col-2">18˚</div>
+                <div class="col-2">16˚</div>
+                <div class="col-2">16˚</div>
+                <div class="col-2">15˚</div>
+                <div class="col-2">14˚</div>
+                <div class="col-2">14˚</div>
+              </div>
+            </div>
+            <hr width=”200″>
+          </div>
+        </div>
+
+        <div class="week">
+          <div class="container-fluid">
+            <div class="row" id=future>
+              <div class="col" id="dayOne">Sat</div>
+              <div class="col" id="dayTwo">Sun</div>
+              <div class="col" id="dayThree">Mon</div>
+              <div class="col" id="dayFour">Tue</div>
+              <div class="col" id="dayFive">Wed</div>
+            </div>
+          </div>
+
+          <div class="tempFuture">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col" >20˚</div>
+  <div class=" col" >19˚</div>
+  <div class=" col" >19˚</div>
+  <div class=" col" >19˚</div>
+  <div class=" col" >24˚</div>
+    </div>
+  </div>
+  <div class=" emojis">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col"><img src="images/sun3.png" alt="sun"></div>
+                      <div class="col"><img src="images/sun3.png" alt="sun"></i></div>
+                      <div class="col"><img src="images/cloud2.png" alt="sun"></i></div>
+                      <div class="col"><img src="images/cloud2.png" alt="sun"></div>
+                      <div class="col"><img src="images/sun3.png" alt="sun"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <hr width=”200″>
+            </div>
           </div>
-          </div>
-   
-  <div class="week">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">Sat</div>
-      <div class="col">Sun</div>
-      <div class="col">Mon</div>
-      <div class="col">Tue</div>
-      <div class="col">Wed</div>
-    </div>
-  </div>
-  
-  <div class="tempFuture">
-    <div class="container-fluid"><div class="row">
-  <div class="col">20˚</div>
-  <div class="col">19˚</div>
-  <div class="col">19˚</div>
-  <div class="col">19˚</div>
-  <div class="col">24˚</div>
-    </div>
-  </div>
-  <div class="emojis">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col"><img src="images/sun3.png" alt="sun"></div>
-        <div class="col"><img src="images/sun3.png" alt="sun"></i></div>
-        <div class="col"><img src="images/cloud2.png" alt="sun"></i></div>
-        <div class="col"><img src="images/cloud2.png" alt="sun"></div>
-        <div class="col"><img src="images/sun3.png" alt="sun"></i></div>
-      </div>
-    </div>
-  </div>
-  </div>
-    </div>
-    </div>
-    <script src="src/script.js"></script>
-  </body>
+          <script src="src/script.js"></script>
+</body>
+
 </html>

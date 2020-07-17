@@ -5,7 +5,25 @@ let exactDate = now.getDate();
 let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let weekDay = weekDays[now.getDay()];
 
+let firstDay = weekDays[now.getDay() + 1];
+let futureDayOne = document.querySelector("#dayOne");
+futureDayOne.innerHTML = `${firstDay}`;
 
+let secondDay = weekDays[now.getDay() + 2];
+let futureDayTwo = document.querySelector("#dayTwo");
+futureDayTwo.innerHTML = `${secondDay}`;
+
+let thirdDay = weekDays[now.getDay() + 3];
+let futureDayThree = document.querySelector("#dayThree");
+futureDayThree.innerHTML = `${thirdDay}`;
+
+let fourthDay = weekDays[now.getDay() + 4];
+let futureDayFour = document.querySelector("#dayFour");
+futureDayFour.innerHTML = `${fourthDay}`;
+
+let fifthDay = weekDays[now.getDay() + 5];
+let futureDayFive = document.querySelector("#dayFive");
+futureDayFive.innerHTML = `${fifthDay}`;
 
 let months = [
   "01",
@@ -19,12 +37,12 @@ let months = [
   "09",
   "10",
   "11",
-  "12"
+  "12",
 ];
 let month = months[now.getMonth()];
 
 let year = now.getFullYear();
-date.innerHTML = "${weekDay}, ${exactDate}, ${month}, ${year}`;
+date.innerHTML = `${weekDay}, ${exactDate}, ${month}, ${year}`;
 
 let time = document.querySelector("#time");
 let hours = now.getHours();
