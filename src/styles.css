@@ -27,7 +27,18 @@ form {
 .button {
   border-radius: 20px;
   border: 2px;
-  padding: 3px;
+  padding: 5px;
+  font-size: 14px;
+  box-shadow: 3px 3px 1px #6c7384;
+  background-color: #ffffff;
+}
+.locationButton {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px;
+  padding: 5px;
   font-size: 14px;
   box-shadow: 3px 3px 1px #6c7384;
   background-color: #ffffff;

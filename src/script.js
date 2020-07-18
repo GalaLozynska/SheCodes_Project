@@ -39,10 +39,12 @@ let months = [
   "11",
   "12",
 ];
+
 let month = months[now.getMonth()];
 
 let year = now.getFullYear();
-date.innerHTML = `${weekDay}, ${exactDate}, ${month}, ${year}`;
+
+date.innerHTML = `${weekDay} ${exactDate}. ${month}. ${year}`;
 
 let time = document.querySelector("#time");
 let hours = now.getHours();
