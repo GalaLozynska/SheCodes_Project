@@ -6,24 +6,8 @@ let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let weekDay = weekDays[now.getDay()];
 
 let firstDay = weekDays[now.getDay() + 1];
-let futureDayOne = document.querySelector("#dayOne");
-futureDayOne.innerHTML = `${firstDay}`;
-
-let secondDay = weekDays[now.getDay() + 2];
-let futureDayTwo = document.querySelector("#dayTwo");
-futureDayTwo.innerHTML = `${secondDay}`;
-
-let thirdDay = weekDays[now.getDay() + 3];
-let futureDayThree = document.querySelector("#dayThree");
-futureDayThree.innerHTML = `${thirdDay}`;
-
-let fourthDay = weekDays[now.getDay() + 4];
-let futureDayFour = document.querySelector("#dayFour");
-futureDayFour.innerHTML = `${fourthDay}`;
-
-let fifthDay = weekDays[now.getDay() + 5];
-let futureDayFive = document.querySelector("#dayFive");
-futureDayFive.innerHTML = `${fifthDay}`;
+let day1 = document.querySelector("#dayOne");
+day1.innerHTML = `${firstDay}`;
 
 let months = [
   "01",
@@ -44,13 +28,37 @@ let month = months[now.getMonth()];
 
 let year = now.getFullYear();
 
-date.innerHTML = `${weekDay} ${exactDate}. ${month}. ${year}`;
+date.innerHTML = `${weekDay} ${exactDate}.${month}.${year}`;
 
 let time = document.querySelector("#time");
 let hours = now.getHours();
 let minutes = now.getMinutes();
 
 time.innerHTML = `${hours}:${minutes} (CEST)`;
+
+let nextHourOne = now.getHours() + 1;
+let hour1 = document.querySelector("#hourOne");
+hour1.innerHTML = `${nextHourOne}`;
+
+let nextHourTwo = now.getHours() + 2;
+let hour2 = document.querySelector("#hourTwo");
+hour2.innerHTML = `${nextHourTwo}`;
+
+let nextHourThree = now.getHours() + 3;
+let hour3 = document.querySelector("#hourThree");
+hour3.innerHTML = `${nextHourThree}`;
+
+let nextHourFour = now.getHours() + 4;
+let hour4 = document.querySelector("#hourFour");
+hour4.innerHTML = `${nextHourFour}`;
+
+let nextHourFive = now.getHours() + 5;
+let hour5 = document.querySelector("#hourFive");
+hour5.innerHTML = `${nextHourFive}`;
+
+let nextHourSix = now.getHours() + 6;
+let hour6 = document.querySelector("#hourSix");
+hour6.innerHTML = `${nextHourSix}`;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
