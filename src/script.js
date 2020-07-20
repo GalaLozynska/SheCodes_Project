@@ -6,8 +6,8 @@ let weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let weekDay = weekDays[now.getDay()];
 
 let firstDay = weekDays[now.getDay() + 1];
-let day1 = document.querySelector("#dayOne");
-day1.innerHTML = `${firstDay}`;
+let dayOne = document.querySelector("#dayOne");
+dayOne.innerHTML = `${firstDay}`;
 
 let months = [
   "01",
@@ -32,7 +32,13 @@ date.innerHTML = `${weekDay} ${exactDate}.${month}.${year}`;
 
 let time = document.querySelector("#time");
 let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 
 time.innerHTML = `${hours}:${minutes} (CEST)`;
 

@@ -15,52 +15,59 @@
 
 <body>
   <div class="container">
-    <div class="card" style="width: 25rem;">
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
 
       <form action="text" id="search-form">
         <input class="search" type="text" placeholder="search weather" autocomplete="off" id="search-text-input" />
         <input class="button" type="submit" value="search">
-
+<button class="locationButton" id=current-location> Current Location</button>
       </form>
-      <button class="locationButton" id=current-location> Current Location</button>
+      <span></span>
       <header>
         <div class="card-body">
           <h1 class="card-title">Amsterdam</h1>
-          <p class="card-subtitle">
-            Now
-            <br />
-            <span id=date>
-              Fri, 19.06.2020
-            </span>
-            <br />
-            <strong>
-              <span id=time> 19:06 (CEST)
-              </span>
-            </strong>
-            <br />
-            <span id=description> Partly cloudy </span>
+          
+          
+          <div class="col-12">
+         
+            <div class="info">
+                  <div class="row">
+                    <div class="col-6" >
+Now
+<br />
+<span id=date>
+  Fri, 19.06.2020
+</span>
+<br />
+<strong>
+  <span id=time> 19:06 (CEST)
+  </span>
+</strong>
+<br />
+<span id=description> Partly cloudy </span>
+
+</div>
+
+
+
+
+<div class="col-6" >
+<strong class="temperatureNow">
+  <span id="current-temperature">19</span>
+
+  <span class="temp">
+    &#8451</span>
+  &nbsp
+  <img id=icon src="images/suncloud.png" alt="">
+</strong>
+
+</div>
+</div>
+</div>
           </p>
       </header>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="card-body">
-            <h2>
-              <strong class="temperatureNow">
-                <span id="current-temperature">19</span>
-
-                <span class="temp">
-                  &#8451</span>
-                &nbsp
-                <img id=icon src="images/suncloud.png" alt="">
-              </strong>
-            </h2>
-          </div>
-        </div>
-
-
-
-        <div class="col-12">
+       
           <div class="card-body">
             <div class="daytime">
               <div class="row">
