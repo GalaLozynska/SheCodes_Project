@@ -56,12 +56,6 @@ form {
   background-color: #ffffff;
 }
 
-h2 {
-  text-align: center;
-  padding: 5px;
-  font-size: 48px;
-}
-
 .temperatureNow {
   font-size: 30px;
 }
@@ -71,17 +65,12 @@ h2 {
   position: absolute;
 }
 
-header p {
-  font-size: 14px;
-  text-align: center;
-}
-
 h3,
 h4 {
   font-size: 18px;
 }
-img {
-  max-width: 20%;
+.mainIcon {
+  max-width: 50%;
 }
 
 .daytime {
