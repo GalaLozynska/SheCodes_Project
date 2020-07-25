@@ -9,8 +9,12 @@
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 500px;
   margin: 30px auto;
+}
+
+header {
+  padding: 5px;
 }
 
 h1 {
@@ -19,7 +23,7 @@ h1 {
 }
 
 .info {
-  padding: 10px;
+  padding: 5px;
 }
 
 .card-subtitle {
@@ -27,9 +31,8 @@ h1 {
 }
 
 form {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
+  text-align: center;
+  padding: 30px 20px 5px 20px;
 }
 .search {
   border-radius: 20px;
@@ -45,6 +48,8 @@ form {
   background-color: #ffffff;
 }
 .locationButton {
+  display: block;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
   border: 2px;
@@ -55,7 +60,7 @@ form {
 }
 
 .temperatureNow {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .temp {
@@ -87,9 +92,6 @@ h4 {
 
 .col img {
   max-width: 40%;
-}
-.col-12 {
-  padding: 10px;
 }
 
 hr {
