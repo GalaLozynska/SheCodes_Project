@@ -66,8 +66,6 @@ let nextHourSix = now.getHours() + 6;
 let hour6 = document.querySelector("#hourSix");
 hour6.innerHTML = `${nextHourSix}`;
 
-if 
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
