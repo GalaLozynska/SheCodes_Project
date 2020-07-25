@@ -54,8 +54,8 @@ form {
   border-radius: 20px;
   border: 2px;
   padding: 5px;
-  font-size: 14px;
-  box-shadow: 3px 3px 1px #6c7384;
+  font-size: 10px;
+  box-shadow: 3px 3px 0.5px #6c7384;
   background-color: #ffffff;
 }
 
